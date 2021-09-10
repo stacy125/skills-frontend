@@ -1,10 +1,10 @@
-import Cards from "./Cards"
+import Skills from "./Skills"
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Cards />
+      <Skills />
     </div>
   );
 }
