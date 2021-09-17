@@ -33,6 +33,7 @@ body{
 
 p {
   margin-top: 0;
+  z-index: 2;
 }
 
 .card.flip {
