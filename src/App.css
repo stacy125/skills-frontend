@@ -15,8 +15,8 @@ body{
 
 .card-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
   
   
 }
@@ -24,7 +24,9 @@ body{
 .card{
   display: grid;
   position: relative;
-  height: 300px;
+  width: 200px;
+  height: 250px;
+  padding: 5px;
   border-radius: .25rem;
   box-shadow: 3px 3px 7px 5px rgba(0, 0, 0, .3);
   transition: 5500ms;
@@ -37,10 +39,9 @@ body{
 .flip {
   transform:  rotateY(180deg);
 }
-
+/* 
 p {
-  padding: 1rem;
-}
+} */
 
 .flash {
   width: 100%;
@@ -52,12 +53,11 @@ p {
 }
 
 .front {
-  /* margin-top: -2px; */
   justify-content: center;
   background-color: rgb(216, 216, 189);
   height: 100%;
   text-align: center;
-  font-size: 25px;
+  font-size: 15px;
   transform: rotateY(0deg);
   z-index: 2;
 }
@@ -65,7 +65,10 @@ p {
 .back {
   background-color: burlywood;
   transform: rotateY(180deg);
-  z-index: 2;
+  overflow: scroll;
+  padding-left: 5px;
+  line-height: 1rem;
+  font-size: medium;
 }
 
 
@@ -73,7 +76,3 @@ p {
   box-shadow: 4px 4px 7px 5px white;
 }
 
-.back p {
-  z-index: 2;
-  padding: 1rem;
-}

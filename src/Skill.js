@@ -17,8 +17,8 @@ function Skill({ skill }) {
                     <h1 className="skill">{skill.name}</h1>
                 </div>
                 <div key={skill.id} className="flash back" >
-                    <p>Description:  {skill.description}</p>
-                    <p>Benefits:  {skill.benefits}</p>
+                    <p className="des-para">Description:  {skill.description}</p>
+                    <p className="ben-para">Benefits:  {skill.benefits}</p>
                 </div>
         </div>
 
